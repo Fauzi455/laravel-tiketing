@@ -27,3 +27,6 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'profile']);
 
 // 4. Penjualan
 Route::get('/sales', [SalesController::class, 'index']);
+
+use App\Http\Controllers\LevelController;
+Route::get('/level', [LevelController::class, 'index']);
