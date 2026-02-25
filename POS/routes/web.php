@@ -6,6 +6,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+use App\Http\Controllers\LevelController;
+Route::get('/level', [LevelController::class, 'index']);
+
+use App\Http\Controllers\KategoriController;
+Route::get('/kategori', [KategoriController::class, 'index']);
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -27,6 +33,3 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'profile']);
 
 // 4. Penjualan
 Route::get('/sales', [SalesController::class, 'index']);
-
-use App\Http\Controllers\LevelController;
-Route::get('/level', [LevelController::class, 'index']);
