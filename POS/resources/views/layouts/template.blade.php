@@ -12,10 +12,10 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
 </head>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=q69KBG8DRj8Xom4x01bTuNgpBNdv4bPdp0bxcCDaRHFYEewVWkBSKUOR-XgPSX5chp3bShcZu_Qy-JwGVD3j4DCaD_AT04-rtKRVIXWAlxZaQ0JWxkkoeOnqIAp8v1JsmcLOcOvrrmf8GygD1V-FpQ" charset="UTF-8"></script></head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
-  <!-- Navbar -->
   @include('layouts.header')
   <!-- /.navbar -->
 
@@ -36,24 +36,16 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     @include('layouts.breadcrumb')
-
+  
     <!-- Main content -->
     <section class="content">
-        @yield('content')
+      @yield('content')
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
-@include('layouts.footer')
+  @include('layouts.footer')
 </div>
-<!-- ./wrapper -->
-
-<!-- jQuery -->
-<script src="{{ asset('adminlte/plugins/jquery/jquery.min.js') }}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('adminlte/dist/js/adminlte.min.js') }}"></script>
 </body>
 </html>
